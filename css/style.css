@@ -358,6 +358,9 @@ a.active{
     }
 }
 @media screen and (max-width:425px) {
+    .logo{
+        padding: 0;
+    }
     .bottom h1{
         margin: 0;
         font-size: 25px;
@@ -366,15 +369,27 @@ a.active{
         height: 25vh;
     }
     .header_banner div{
+        width: 100%;
         height: 250px;
     }
     .header_content h1{
         font-size: 25px;
+
+    }
+    .bottom h1{
+        border-bottom: 2px solid #252B42;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        padding: 0;
+
     }
     .list_icon{
         border-bottom: 2px solid #252B42;
         width: 80%;
         padding: 0 5%;
+        margin-top:20px;
     }
     .list_icon2{
         border-bottom: 2px solid #252B42;
@@ -419,19 +434,7 @@ a.active{
     .bottom h1{
         margin-top: 150px;
     }
-    .list_icon i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        background: #02897A;
-        color: white;
-        box-shadow: -1px 3px 5px rgb(136, 135, 135);
-        border-radius: 19px;
-        font-size: 16px;
-     
-    }
+   
     .list_icon h1{
         font-size: 22px;
         font-weight: 600;
@@ -443,6 +446,19 @@ a.active{
         font-size: 16px;
         width: 90%;
     }
+}
+.list_icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #02897A;
+    color: white;
+    box-shadow: -1px 3px 5px rgb(136, 135, 135);
+    border-radius: 19px;
+    font-size: 16px;
+ 
 }
 
 .list_icon2{
