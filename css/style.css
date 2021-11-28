@@ -268,9 +268,9 @@ a.active{
 }
 @media screen and (max-width:375px) {
     .header_content div{
-       margin-left: 40px;
-   }
-  
+        width: 90%;
+        padding: 0 5%;
+    }
    .header_content img{
        width: 350px;
    }
@@ -301,38 +301,149 @@ a.active{
     width: 90%;
     padding: 10px 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    overflow-x: hidden;
 }
-.list_icon{
-    margin: 0;
-}
-.list_icon i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background: #02897A;
-    color: white;
-    box-shadow: -1px 3px 5px rgb(136, 135, 135);
-    border-radius: 19px;
-    font-size: 16px;
- 
-}
-.list_icon h1{
-    font-size: 22px;
-    font-weight: 600;
-    color: #22343D;
-}
-.list_icon p{
-    color: #22343D;
-    font-weight: 400;
-    font-size: 16px;
-    width: 90%;
+@media screen and (max-width:1024px) {
+    .icon_card{
+        display: flex;
+        justify-content: end;   
+        padding-left: 10%;
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+    .list_icon4{
+        width: 45%;
+    }
+    .container3{
+        padding: 0;
+    }
+    .header_content{
+        padding: 0 1%;
+    }
+    .banner{
+        margin: 0;
+        padding: 0;
+    }
+  
+    header{
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
 }
 
+@media screen and (max-width:768px) {
+    .icon_card{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+        padding-right: 5%;
+    }
+    .list_icon{
+        width: 100%;
+    }
+    .list_icon2{
+        width: 100%;
+    }
+    .list_icon3{
+        width: 100%;
 
+    }
+    .list_icon4{
+        width: 100%;
 
+    }
+    header{
+        border-bottom-right-radius: 8%;
+    }
+}
+@media screen and (max-width:425px) {
+    .bottom h1{
+        margin: 0;
+        font-size: 25px;
+        width: 90%;
+        padding: 0 5%;
+        height: 25vh;
+    }
+    .header_banner div{
+        height: 250px;
+    }
+    .header_content h1{
+        font-size: 25px;
+    }
+    .list_icon{
+        border-bottom: 2px solid #252B42;
+        width: 80%;
+        padding: 0 5%;
+    }
+    .list_icon2{
+        border-bottom: 2px solid #252B42;
+        width: 80%;
+        padding: 0 5%;
+    }
+    .list_icon2 i{
+        margin-top: 10px;
+    }
+    .list_icon3{
+        border-bottom: 2px solid #252B42;
+        width: 80%;
+        padding: 0 5%;
+    }
+    .list_icon3 i{
+        margin-top:10px;
+    }
+    .list_icon4{
+        width: 80%;
+        border-bottom: 2px solid #252B42;
+        padding: 0 5%;
+    }
+    .list_icon4 i{
+        margin-top: 10px;
+    }
+    .icon_card{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+   
+}
+@media screen and (max-width:375px) {
+    .header_content i{
+        margin: 20px 5px;
+    }
+    .list_icon{
+        margin: 0;
+    }
+    .bottom h1{
+        margin-top: 150px;
+    }
+    .list_icon i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: #02897A;
+        color: white;
+        box-shadow: -1px 3px 5px rgb(136, 135, 135);
+        border-radius: 19px;
+        font-size: 16px;
+     
+    }
+    .list_icon h1{
+        font-size: 22px;
+        font-weight: 600;
+        color: #22343D;
+    }
+    .list_icon p{
+        color: #22343D;
+        font-weight: 400;
+        font-size: 16px;
+        width: 90%;
+    }
+}
 
 .list_icon2{
     margin: 0;
@@ -391,7 +502,6 @@ a.active{
 }
 
 .list_icon4{
-    width: 19%;
     margin: 0;
 }
 .list_icon4 i{
@@ -416,6 +526,8 @@ a.active{
     color: #22343D;
     font-weight: 400;
     font-size: 16px;
+    width: 50%;
+
 }
 .icon_button{
     display: flex;
