@@ -2,7 +2,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-
+    overflow-x: hidden;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -143,6 +143,28 @@ a.active{
     background: rgb(243, 243, 243);
     padding: 5px;
     border-radius: 50%;
+}
+
+.bars{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .bars{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    .bars li i{
+        color: #036358;
+        font-size: 25px;
+    }
+    .list{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
 }
 
 .header_banner{
