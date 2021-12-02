@@ -297,6 +297,9 @@ a.active{
     font-weight: 700;
     margin: 0;
 }
+.list_icon i{
+    margin-top:10px;
+}
 .icon_card{
     width: 90%;
     padding: 10px 5%;
