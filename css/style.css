@@ -639,7 +639,6 @@ a.active{
     align-items: center;
  
 }
-
 .container_content{
     width: 486px;
     height: 435px;
@@ -660,6 +659,9 @@ a.active{
     font-size: 16px;
     font-weight: 400;
 
+}
+.fa-award{
+    color: gold;
 }
 .container img{
     width: 540px;
@@ -717,10 +719,11 @@ a.active{
     font-size: 20px;
 }
 .container_icon i p{
-    margin: 20px 35px;
+    margin: 20px 25px;
     font-family: 'Poppins', sans-serif;
     color:#22343D;
 }
+
 .ch1{
     color: #FF9900;   
 }
@@ -776,7 +779,15 @@ a.active{
 .container_content3 p{
     font-size: 16px;
     font-weight: 400;
-
+   
+}
+.container_content3 p i{
+    padding: 0;
+    margin-right: 10px;
+}
+.fa-star{
+    color: #02897A;
+    margin-left: -30px;
 }
 .container3 img{
     animation-name:management;
