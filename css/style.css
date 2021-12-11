@@ -2,15 +2,17 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+ 
     overflow-x: hidden;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 header{
-    background: rgb(243, 243, 243);
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);    
     padding-bottom: 100px;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 .nav{
     display: flex;
@@ -140,8 +142,6 @@ a.active{
     text-decoration: none;
     font-size: 20px;
     color: #02897A;
-    background: rgb(243, 243, 243);
-    padding: 5px;
     border-radius: 50%;
 }
 
@@ -197,7 +197,7 @@ a.active{
     width: 600px;
     height: 550px;
 }
-.header_content button{
+.header_content div button{
     background: #02897A;
     color: white;
     width: 175px;
@@ -207,7 +207,7 @@ a.active{
     font-weight: bold;
     font-style: normal;
     border-radius: 4px;
-    transition: 0.4s;
+    transition: 0.5s !important;
 }
 .header_content button:hover{
     background: white;
@@ -475,6 +475,7 @@ a.active{
     .container2 img{
         width: 300px;
     }
+    
     .container3{
         flex-wrap: wrap;
         flex-wrap: wrap-reverse;
@@ -482,6 +483,7 @@ a.active{
     .container3 img{
         width: 300px;
     }
+    
 }
 @media screen and (max-width:375px) {
     .header_content i{
@@ -667,7 +669,7 @@ a.active{
     font-weight: 400;
     margin: 0;
     padding: 10px;
-    transition: 0.5s;
+    transition: 0.5s; 
     border-radius: 12px;
 }
 .container_content p:hover{
@@ -730,14 +732,15 @@ a.active{
     font-size: 16px;
     font-weight: 400;
     padding: 10px;
-    transition: 0.3s;
+    transition: 0.5s; 
+    border-radius: 12px;
+
 
 }
 .container_content2 p:hover{
     background-color: #7fcec5;
     background-image: linear-gradient(90deg, #7fcec5 0%, #14557b 74%);;
     color: white;
-    border-radius: 12px;
 }
 .container_icon i{
     font-style: normal;
@@ -808,14 +811,14 @@ a.active{
 .container_content3 p{
     font-size: 16px;
     font-weight: 400;
-    transition: 0.3s;
+    transition: 0.5s; 
+    border-radius: 12px;
     padding: 10px;
     margin: 0;
 }
 .container_content3 p:hover{
     background: #036358;
     color: white;
-    border-radius: 12px;
 }
 .gold{
     margin-left: -30px;
@@ -857,13 +860,13 @@ a.active{
 .main_about h2{
   margin: 0 50px;
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 700;
   color: #2d4450;
 }
 
 .center_card h1{
-    font-size: 34px;
+    font-size: 35px;
     font-weight: 700;
     color: #22343D;
     margin-top: 60px;
@@ -932,7 +935,7 @@ a.active{
     text-align: center;
 }
 .title h1{
-    font-size: 34px;
+    font-size: 45px;
     font-weight: 700;
     color: #22343D;
     text-align: center;
@@ -943,6 +946,7 @@ a.active{
 }
 .title p{
     margin: 10px 0px;
+    font-size: 16px;
     margin-bottom: 50px;
 }
 .price_inline{
@@ -1144,10 +1148,9 @@ a.active{
 }
 .title_reviews{
     text-align: center;
-    
 }
 .title_reviews h2{
-    font-size: 34px;
+    font-size: 45px;
     font-weight: 700;
     color: #22343D;
 }
@@ -1171,6 +1174,7 @@ a.active{
 }
 .reviews_card i{
     color: gold;
+    margin: 0 ;
 }
 .reviews_card p{
     width: 90%;
@@ -1198,70 +1202,6 @@ a.active{
     height: 50px;
     object-fit: cover;
 }
-.main_banner{
-    width: 968px;
-    height: 310px;
-    top: 30%;
-    left: 15%;
-    background: #02897A;
-    border-radius: 32px;
-    position: relative;
- 
-}
-.main_banner button{
-    position: absolute;
-    bottom: 10%;
-    left: 51px;
-    width: 150px;
-    height: 50px;
-    background: white;
-    border: 0;
-    border-radius: 8px;
-    color: #02897A;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.5s;
-}
-.main_banner button:hover{
-    background: #036358;
-    color: white;
-    border: 1px solid #BCD0E5;
-}
-.banner_content{
-    width: 90%;
-    height: 345px;
-    padding: 0 5%;
-    display: flex;
 
-}
-.banner_content h1{
-    padding-top: 20px;
-    color: white;
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0;
-}
-.banner_content img{
-    animation-name:banner;
-    animation-timing-function: linear;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    position: relative;
-    animation-direction: alternate-reverse;
-    transition: 1s;
-    top: 10%;
-}
-@keyframes banner {
-    0%{
-        left: -10px;
-        top:0;
-
-    }100%{
-        left: 10px;
-        top: 0;
-
-    }  
-    
-}
 
 
